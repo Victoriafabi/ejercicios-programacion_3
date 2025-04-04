@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Estilos generales */
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Estilos para los cuadros de cerveza */
+.beer-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 350px;  /* Fijamos la altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.beer-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.beer-card h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.beer-card p {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+
+/* Asegurar que las tarjetas se mantengan cuadradas en pantallas grandes */
+@media (min-width: 992px) {
+  .beer-card {
+    height: 300px;  /* Puede ajustarse según lo que prefieras */
+  }
+}
