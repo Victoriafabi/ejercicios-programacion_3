@@ -22,4 +22,4 @@ const BookSearch = ({search, onSearch}) => {
     )
 }
 
-export default BookSearch
+export default BookSearch;
